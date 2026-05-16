@@ -1,0 +1,41 @@
+# ==========================================
+# SINAC: Professional .gitignore & IP Protection
+# ==========================================
+
+# --- [ Python & Environments ] ---
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# --- [ Data & Database ] ---
+# We keep the structure and samples for public reproducibility.
+data/*
+!data/sample_bronze.json
+!data/sinac_fallback.db
+!data/backups/
+!data/.gitkeep
+
+# Ignore analytical outputs
+*.parquet
+*.csv
+*.xlsx
+
+# --- [ Security & Secrets ] ---
+.env
+.env.*
+.secrets
+
+# --- [ Logs & Temporary ] ---
+logs/*.log
+logs/*.jsonl
+tmp/
+
+# --- [ IDEs & System ] ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- [ AI & History ] ---
+*.chat
+Gemini.chat

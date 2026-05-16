@@ -1,0 +1,17 @@
+services:
+  postgres_sam:
+    image: postgres:16
+    container_name: sinac_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: your_secure_password
+      POSTGRES_DB: macro_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Esta línea permite que Docker reconstruya la DB si está vacía usando tu backup
+      - ./data/backup_db.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  pgdata:

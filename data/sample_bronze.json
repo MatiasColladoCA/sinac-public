@@ -1,0 +1,6 @@
+[
+    {"d": "2024-01-01", "v": 800.00, "variable_id": "dolar_oficial"},
+    {"d": "2024-01-02", "v": 810.00, "variable_id": "dolar_oficial"},
+    {"d": "2024-01-01", "v": 23000.00, "variable_id": "reservas_internacionales"},
+    {"d": "2024-01-02", "v": 23100.00, "variable_id": "reservas_internacionales"}
+]
